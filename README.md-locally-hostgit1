@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# branching
+BAJAJAJAJAJA
 
-THIS IS NEW TEXT
+# karoldab
 =======
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
@@ -47,5 +47,5 @@ Use these steps to clone from SourceTree, our client for using the repository co
 3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
 4. Open the directory you just created to see your repository’s files.
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).new line to test something
->>>>>>> 0fe80a38e5be2120e38a906111df7c48b4aed6fe
+Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+>>>>>>> d4a64a327e6fe9273e6b078bc1de796f99dfb0f2

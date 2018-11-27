@@ -1,0 +1,36 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1460 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 42:01:0a:a6:00:0b brd ff:ff:ff:ff:ff:ff
+    inet 10.166.0.11/32 brd 10.166.0.11 scope global noprefixroute dynamic eth0
+       valid_lft 82824sec preferred_lft 82824sec
+    inet6 fe80::4001:aff:fea6:b/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+============== to jest dodatkowa linia =============
+-bash: tail -10 /var/log/messages: No such file or directory
+-bash: sudo tail -10 /var/log/messages: No such file or directory
+Nov 27 11:25:38 git1 systemd-logind: New session 1 of user dabrowski_pl_gmail_com.
+Nov 27 11:25:38 git1 systemd: Starting Session 1 of user dabrowski_pl_gmail_com.
+Nov 27 11:26:35 git1 su: (to root) dabrowski_pl_gmail_com on pts/0
+Nov 27 11:26:38 git1 su: (to user) dabrowski_pl_gmail_com on pts/0
+Nov 27 11:39:49 git1 systemd: Starting Cleanup of Temporary Directories...
+Nov 27 11:39:49 git1 systemd: Started Cleanup of Temporary Directories.
+Nov 27 12:01:01 git1 systemd: Created slice User Slice of root.
+Nov 27 12:01:01 git1 systemd: Starting User Slice of root.
+Nov 27 12:01:01 git1 systemd: Started Session 2 of user root.
+Nov 27 12:01:01 git1 systemd: Starting Session 2 of user root.
+Nov 27 11:25:38 git1 systemd-logind: New session 1 of user dabrowski_pl_gmail_com.
+Nov 27 11:25:38 git1 systemd: Starting Session 1 of user dabrowski_pl_gmail_com.
+Nov 27 11:26:35 git1 su: (to root) dabrowski_pl_gmail_com on pts/0
+Nov 27 11:26:38 git1 su: (to user) dabrowski_pl_gmail_com on pts/0
+Nov 27 11:39:49 git1 systemd: Starting Cleanup of Temporary Directories...
+Nov 27 11:39:49 git1 systemd: Started Cleanup of Temporary Directories.
+Nov 27 12:01:01 git1 systemd: Created slice User Slice of root.
+Nov 27 12:01:01 git1 systemd: Starting User Slice of root.
+Nov 27 12:01:01 git1 systemd: Started Session 2 of user root.
+Nov 27 12:01:01 git1 systemd: Starting Session 2 of user root.
+============ this is a test-entry ================

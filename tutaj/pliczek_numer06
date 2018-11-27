@@ -1,0 +1,11 @@
+Nov 27 11:25:38 git1 systemd-logind: New session 1 of user dabrowski_pl_gmail_com.
+Nov 27 11:25:38 git1 systemd: Starting Session 1 of user dabrowski_pl_gmail_com.
+Nov 27 11:26:35 git1 su: (to root) dabrowski_pl_gmail_com on pts/0
+Nov 27 11:26:38 git1 su: (to user) dabrowski_pl_gmail_com on pts/0
+Nov 27 11:39:49 git1 systemd: Starting Cleanup of Temporary Directories...
+Nov 27 11:39:49 git1 systemd: Started Cleanup of Temporary Directories.
+Nov 27 12:01:01 git1 systemd: Created slice User Slice of root.
+Nov 27 12:01:01 git1 systemd: Starting User Slice of root.
+Nov 27 12:01:01 git1 systemd: Started Session 2 of user root.
+Nov 27 12:01:01 git1 systemd: Starting Session 2 of user root.
+============ this is a test-entry ================
