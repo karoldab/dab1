@@ -1,5 +1,4 @@
 # -- GSK Ansible Operations initiative
-- hosts: qq
   gather_facts: no
   tasks:
   - name: GET_KERNEL
