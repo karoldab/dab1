@@ -6,7 +6,3 @@
       shell: uname -r
       register: kernel_version
       failed_when: kernel_version.stdout !="3.10.0-693.43.1.el7.x86_64"
-    - name: TELL ME IF KERNEL IS OKAY !
-      debug:
-        msg: "! OKAY ! KERNEL VERSION IS CORRECT"
-      when: kernel_version.stdout == "3.10.0-693.43.1.el7.x86_64"
