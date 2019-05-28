@@ -1,6 +1,7 @@
 # test
-tasks:
-- name: get_kernel
-  shell: uanme -r
-  register: out
-- debug: var=out.stdout_lines
+- hosts:
+  tasks:
+  - name: get_kernel
+    shell: uanme -r
+    register: out
+  - debug: var=out.stdout_lines
