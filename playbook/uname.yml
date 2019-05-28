@@ -1,7 +1,7 @@
 # -- GSK Ansible Operations initiative
-  gather_facts: no
-  tasks:
-  - name: GET_KERNEL
-    shell: uname -r
-    register: kernel_version
-    failed_when: kernel_version.stdout !="3.10.0-693.43.1.el7.x86_64"
+gather_facts: no
+tasks:
+- name: GET_KERNEL
+  shell: uname -r
+  register: kernel_version
+  failed_when: kernel_version.stdout !="3.10.0-693.43.1.el7.x86_64"
