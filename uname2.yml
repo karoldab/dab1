@@ -1,5 +1,5 @@
 # test
-- hosts: all
+- hosts:
   tasks:
   - name: get_kernel
     shell: uanme -r
