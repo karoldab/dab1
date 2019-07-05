@@ -1,0 +1,125 @@
+GIT notes
+=========
+
+== As ROOT==
+Basics:
+yum install git
+git config --global user.name "karoldab"
+git config --global user.email "bobo@gmail.com"
+git config --system core.editor "/bin/vim"
+
+Gitconfig:
+cat /etc/gitconfig
+[core]
+        editor = /bin/vim
+
+useradd -c 'GIT User' user
+passwd user
+
+
+==As USER ==
+ 
+mkdir repo
+cd repo
+git init .
+echo "THIS IS A README FILE" > README.MD
+echo "/* THIS IS A VALID C SOURCE FILE */" >source.c
+git status
+
+Now configure user name and email - BUT LOCALLY:
+git config user.name "user"
+git config user.email "bobo@gmail.com"
+
+Preparing location to be commited:
+git add . 
+git status
+git commit -m "my comment for this commit goes here"
+git status
+
+Practice:
+Editing file, that has already been commited - is being returned as modified while git status.
+Adding more files into directory - without git add . - indicates new files are inside the dir, but not added.
+Adding new files, with git add . - indicates that new files are ready to be commited.
+
+Removing files and commiting removal:
+rm test.txt
+git rm test.txt
+git commit -m "removal commit"
+[master 14d9249] removal commit
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 test.txt
+ 
+==============
+Git LOG options of reviewing:
+git log
+git log -p 
+git log --grep="wybrany tekst grepowania"
+git log --graph --decorate
+
+==========
+Git CLONING
+mkdir /home/user/wrk
+cd /home/user/wrk
+git clone /home/user/repo .
+
+Configure a new Author for this wrk" directory
+Modify a file - to be commited into new direcltory
+vim README.MD .... something
+git status
+git add .
+git commit -m "po klonowaniu commit"
+
+CLONING from a repote git system
+pre-requisites: user & empty directory & ssh connectivity
+Clone a git repository into your local directory on a separate server:
+git clone user@git1.c.alpine-guild-209415.internal:repo .
+
+
+++ PULLING remote branches into local clone of a repository:
+
+for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master `; do
+   git branch --track ${branch#remotes/origin/} $branch
+done
+
+
+
+========
+Pushing into remote repository.
+git push origin master
+login & pass for the git hub repo.
+
+
+
+
+
+
+
+==========
+BRANCH
+
+git branch
+git branch dev
+git checkout dev
+
+mkdir branching && cd branching
+git clone https://github.com/latest123/branching.git .
+
+git checkout -b dev
+git branch
+
+echo "123" > newfile.txt
+<a few more example-files like this>
+
+git config --global user.name "karoldab"
+git config --global user.email "bobo@gmail.com"
+
+
+======
+MERGE
+
+git merge dev
+git checkout master
+git merge qa
+
+
+

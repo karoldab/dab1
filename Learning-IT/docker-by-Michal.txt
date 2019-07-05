@@ -1,0 +1,67 @@
+docker inspect --format "{{.NetworkSettings.Networks.bridge.IPAddress}}" www
+
+docker run -itd --name  www -v $(pwd):/wwwvol centos:latest
+
+docker build -t customcentos:v1 .
+
+
+Usuwanie wszystkich obecnych images:
+docker rmi $(docker images -q)
+
+=========================
+
+Zadanie: 
+Tworzymy z istniejacego kontenera - image jako wzór dla nowych koneterow:
+docker commit -m "obraz a1 httpd vsftpd" -a "karoldab" a1 a1_obraz:latest
+
+Zgranie obrazu do pliku:
+docker save --output a1_obraz.v1.tar a1_obraz
+
+Wgranie obrazu z pliku:
+docker load --input a1_obraz.v1.tar
+
+
+
+==========
+Alpine image:
+
+docker pull alpine
+docker run -itd --name c1 alpine
+docker attach c1
+apk add apache2
+
+
+mkdir /run/apache2
+/usr/sbin/httpd -f /etc/apache2/httpd.conf -DFOREGROUND
+
+
+
+
+
+========
+1. alpine is the source
+2. apk add apache2
+3. mkdir /run/apache2
+4. /usr/sbin/httpd -f /etc/apache2/httpd.conf -DFOREGROUND
+
+
+
+
+
+Docker restart:
+docker 
+
+
+
+=========
+SWARM
+
+Replicated - 
+Global - 
+
+
+docker swarm join --token SWMTKN-1-0jmxctorimcf2rgx0pl26k0a4ssjdzsng0v0tx3kbvx6scoxaf-a6dfdfi06a8nt7tzvoobvros0 10.142.0.2:2377
+
+
+
+
