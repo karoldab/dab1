@@ -1,0 +1,1 @@
+This file is testing network connectivity to an internet located service. If you're reading this - IT WOKRS!
